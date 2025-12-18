@@ -9,7 +9,7 @@ use App\Http\Controllers\FriendController;
 use App\Http\Controllers\StoryController;
 use App\Http\Controllers\ForumController;
 use App\Http\Controllers\ReponseController;
-use App\Http\Controllers\ChatBotController;
+// use App\Http\Controllers\ChatBotController;
 
 // Redirection vers le formulaire
 Route::get('/', fn() => redirect()->route('register.form'));
@@ -103,7 +103,7 @@ Route::post('/forum/{question}/favori', [ForumController::class, 'toggleFavori']
 Route::delete('/forum/{question}', [ForumController::class, 'destroy'])->name('forum.destroy');
 Route::post('/forum/{question}/reponse', [ReponseController::class, 'store'])->name('reponse.store');
 
-// chat bot
- Route::get('/chatbot', [ChatBotController::class, 'index'])->name('chat.index');
- Route::post('/chatbot/send', [ChatBotController::class, 'sendMessage'])->name('chat.send');
-});
+//  chat bot
+//  Route::get('/chatbot', [ChatBotController::class, 'index'])->name('chat.index');
+//  Route::post('/chatbot/send', [ChatBotController::class, 'sendMessage'])->name('chat.send');
+// });
