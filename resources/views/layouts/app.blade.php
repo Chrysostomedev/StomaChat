@@ -106,13 +106,13 @@ body.dark-mode .friends-icon span, body.dark-mode .forum-icon span { color:#e0e0
 
   <div class="header-icons">
     <button id="themeToggle"><i class="bi bi-moon fs-5"></i></button>
-    <a href="#"><i class="bi bi-gift-fill"></i><span>Dons</span></a>
+    <!-- <a href="#"><i class="bi bi-gift-fill"></i><span>Dons</span></a> -->
     {{-- <a href="#"><i class="bi bi-gear"></i><span>Paramètres</span></a> --}}
     <a href="{{ route('profile.show') }}"><i class="bi bi-person-circle"></i><span>Profil</span></a>
-    {{-- <form method="POST" action="{{ route('logout') }}">
+   <form method="POST" action="{{ route('logout') }}">
       @csrf
       <button type="submit"><i class="bi bi-box-arrow-right"></i><span>Quitter</span></button>
-    </form> --}}
+    </form> 
   </div>
 </header>
 
@@ -130,7 +130,6 @@ body.dark-mode .friends-icon span, body.dark-mode .forum-icon span { color:#e0e0
   </div>
 
   <a href="{{ route('dashboard.index') }}" class="nav-link"><i class="bi bi-house"></i><span>Akwaba</span></a>
-  <a href="{{ route('stories.index') }}" class="nav-link"><i class="bi bi-camera"></i><span>Story</span></a>
 
  
 @php 
@@ -186,6 +185,7 @@ $totalNotifications = $friendRequestsCount + $unreadMessagesCount;
     </div>
 </div>
 
+  <a href="{{ route('stories.index') }}" class="nav-link"><i class="bi bi-camera"></i><span>Story</span></a>
 
   
 </footer>

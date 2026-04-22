@@ -106,4 +106,5 @@ Route::post('/forum/{question}/reponse', [ReponseController::class, 'store'])->n
 //  chat bot
 //  Route::get('/chatbot', [ChatBotController::class, 'index'])->name('chat.index');
 //  Route::post('/chatbot/send', [ChatBotController::class, 'sendMessage'])->name('chat.send');
-// });
+
+}); // ← fermeture du groupe middleware('auth')
